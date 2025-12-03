@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Técnico - Arquitectura de Software | Eber Rincón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-vercel">
+        <nav class="navbar-vercel">
+            <div class="nav-wrapper">
+                <div class="nav-brand">
+                    <a href="#" onclick="loadHome()" class="brand-link">
+                        <span class="brand-icon">⚙️</span>
+                        <span class="brand-text">Arquitectura</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="loadHome()" class="nav-link">Inicio</a>
+                    <a href="#" onclick="loadPost(1)" class="nav-link">POST 1</a>
+                    <a href="#" onclick="loadPost(2)" class="nav-link">POST 2</a>
+                    <a href="#" onclick="loadPost(3)" class="nav-link">POST 3</a>
+                    <a href="https://github.com/eerinconr-dot/proyecto-copilot" class="nav-link nav-github" target="_blank">GitHub →</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header-author">
+            <div class="header-author-content">
+                <h1 class="author-name">Eber Rincón</h1>
+                <p class="author-subtitle">Blog Técnico - Arquitectura de Software</p>
+            </div>
+        </header>
+
+        <main class="main-vercel">
+            <div id="content" class="content-vercel">
+                <!-- Contenido dinámico -->
+            </div>
+        </main>
+
+        <footer class="footer-vercel">
+            <div class="footer-wrapper">
+                <p class="footer-text">Eber Rincón • Electiva I en Ingeniería de Software • UNINCCA 2024</p>
+                <p class="footer-subtext">Blog Técnico sobre Arquitectura de Software</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

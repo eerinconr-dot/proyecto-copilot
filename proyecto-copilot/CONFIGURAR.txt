@@ -1,0 +1,252 @@
+📌 CÓMO EJECUTAR Y PUBLICAR EL BLOG TÉCNICO
+═══════════════════════════════════════════════════════════════════════════════
+
+AUTOR: Eber Rincón
+CURSO: Electiva I en Ingeniería de Software - UNINCCA - Corte 3
+FECHA: Diciembre 2, 2024
+
+═══════════════════════════════════════════════════════════════════════════════
+OPCIÓN 1: VER EL BLOG LOCALMENTE
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Abre el Explorador de Archivos
+   Windows: Presiona la tecla Windows + E
+   
+PASO 2: Navega a la carpeta del proyecto
+   D:\Mis Documentos No Borrar\EBER\Documents\UNINCCA\CUATRIMESTRE 2025-3\
+   ELECTIVA I EN INGENIERIA DE SOFTWARE\CORTE 3\proyecto-copilot
+
+PASO 3: Haz doble clic en "index.html"
+   ¡El blog se abrirá en tu navegador predeterminado!
+
+PASO 4: Disfruta del blog
+   - Usa el menú superior para navegar
+   - Haz clic en "Leer más" para ver los posts completos
+   - Todo se carga sin recargar la página
+
+═══════════════════════════════════════════════════════════════════════════════
+OPCIÓN 2: PUBLICAR EN GITHUB PAGES
+═══════════════════════════════════════════════════════════════════════════════
+
+REQUISITOS:
+✓ Git instalado (https://git-scm.com)
+✓ Cuenta en GitHub (https://github.com)
+✓ Repositorio "proyecto-copilot" creado
+
+PASO 1: Abre PowerShell como Administrador
+   - Haz clic derecho en el escritorio
+   - Selecciona "Terminal (administrador)" o "PowerShell (administrador)"
+
+PASO 2: Navega a la carpeta del proyecto
+   cd "d:\Mis Documentos No Borrar\EBER\Documents\UNINCCA\CUATRIMESTRE 2025-3\ELECTIVA I EN INGENIERIA DE SOFTWARE\CORTE 3\proyecto-copilot"
+
+PASO 3: Verifica el estado de Git
+   git status
+   (Deberías ver archivos sin stagear)
+
+PASO 4: Agrega todos los archivos
+   git add .
+
+PASO 5: Haz un commit
+   git commit -m "Blog Técnico: Arquitectura de Software - 3 Posts completados por Eber Rincón"
+
+PASO 6: Verifica el remote (conexión con GitHub)
+   git remote -v
+   
+   Si no hay output, añade el remote:
+   git remote add origin https://github.com/eerinconr-dot/proyecto-copilot.git
+
+PASO 7: Haz push a GitHub
+   git push origin main
+   
+   (Si te pide credenciales, usa tu Personal Access Token)
+
+PASO 8: Verifica en GitHub
+   - Ve a https://github.com/eerinconr-dot/proyecto-copilot
+   - Verifica que todos los archivos estén presentes
+
+═══════════════════════════════════════════════════════════════════════════════
+PASO 3: ACTIVAR GITHUB PAGES
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Ve al repositorio en GitHub
+   https://github.com/eerinconr-dot/proyecto-copilot
+
+PASO 2: Haz clic en "Settings" (Configuración)
+   - Busca en el menú superior derecho
+   - Es probable que esté entre "Issues" e "Insights"
+
+PASO 3: En el menú izquierdo, busca "Pages"
+   - Haz clic en "Pages" (bajo "Code and automation")
+
+PASO 4: Configura el origen del sitio
+   - Bajo "Build and deployment"
+   - "Source": Selecciona "Deploy from a branch"
+
+PASO 5: Selecciona la rama y carpeta
+   - Branch: main
+   - Folder: / (root)
+
+PASO 6: Haz clic en "Save"
+
+PASO 7: ¡Espera! (1-2 minutos)
+   - GitHub preparará tu sitio web
+   - Verás un mensaje como: "Your site is live at https://..."
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ TU BLOG ESTARÁ EN VIVO EN:
+═══════════════════════════════════════════════════════════════════════════════
+
+https://eerinconr-dot.github.io/proyecto-copilot
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTENIDO DEL BLOG
+═══════════════════════════════════════════════════════════════════════════════
+
+📄 POST 1: ¿Qué es la Arquitectura de Software?
+   ├─ Definición clara y completa
+   ├─ Objetivos principales
+   ├─ Componentes: Módulos, Interfaces, Conectores
+   ├─ Importancia: Escalabilidad, Mantenibilidad, Rendimiento
+   ├─ Roles del Arquitecto de Software (tabla)
+   ├─ 3 ejemplos reales: E-commerce, Red Social, ERP
+   └─ Conclusión reflexiva
+
+📄 POST 2: Estilos Arquitectónicos más Utilizados
+   ├─ Definición de estilo
+   ├─ Monolítico (características, ventajas, desventajas)
+   ├─ N-Capas
+   ├─ Cliente-Servidor
+   ├─ MVC
+   ├─ Microservicios
+   ├─ Tabla comparativa (6 estilos vs 6 características)
+   └─ Conclusión con recomendaciones
+
+📄 POST 3: Patrones Arquitectónicos Modernos
+   ├─ Definición de patrón
+   ├─ Clean Architecture (4 capas detalladas)
+   ├─ Arquitectura Hexagonal (Puertos y Adaptadores)
+   ├─ CQRS (flujo completo)
+   ├─ Tabla comparativa de 3 patrones
+   ├─ 3 ejemplos: E-commerce, Notificaciones, Red Social
+   └─ Conclusión comparativa
+
+═══════════════════════════════════════════════════════════════════════════════
+SOLUCIÓN DE PROBLEMAS
+═══════════════════════════════════════════════════════════════════════════════
+
+❌ PROBLEMA: "Git no se reconoce como comando"
+✅ SOLUCIÓN: Instala Git desde https://git-scm.com/download/win
+
+❌ PROBLEMA: "fatal: Could not read from remote repository"
+✅ SOLUCIÓN: 
+   1. Verifica que tienes conexión a internet
+   2. Asegúrate de tener un Personal Access Token en GitHub
+   3. Reconfigura el remote: git remote set-url origin [URL]
+
+❌ PROBLEMA: "The file index.html is not found"
+✅ SOLUCIÓN: Asegúrate de estar en la carpeta correcta con "cd"
+
+❌ PROBLEMA: El blog no aparece en GitHub Pages
+✅ SOLUCIÓN:
+   1. Espera 2-3 minutos (puede tomar tiempo)
+   2. Ve a Settings > Pages y verifica que esté habilitado
+   3. Recarga la página: Ctrl + F5
+
+❌ PROBLEMA: Los posts no cargan
+✅ SOLUCIÓN: Si abres localmente, algunos navegadores bloquean fetch()
+   - Usa: python -m http.server 8000
+   - Luego abre: http://localhost:8000
+
+═══════════════════════════════════════════════════════════════════════════════
+ARCHIVOS INCLUIDOS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ index.html ......................... Página principal del blog
+✓ INICIO.html ........................ Guía de bienvenida
+✓ css/styles.css ..................... Estilos completamente personalizados
+✓ js/main.js ......................... Lógica de carga dinámica
+✓ posts/post1.json ................... Contenido del POST 1
+✓ posts/post2.json ................... Contenido del POST 2
+✓ posts/post3.json ................... Contenido del POST 3
+✓ README.md .......................... Documentación del proyecto
+✓ INSTRUCCIONES.md ................... Instrucciones detalladas
+✓ RESUMEN_PROYECTO.txt ............... Resumen visual del proyecto
+✓ CONFIGURAR.txt ..................... Este archivo
+✓ .gitignore ......................... Archivos a ignorar en Git
+✓ _config.yml ........................ Configuración de Jekyll/GitHub Pages
+✓ deploy.bat ......................... Script de deploy (Windows)
+
+═══════════════════════════════════════════════════════════════════════════════
+CARACTERÍSTICAS TÉCNICAS
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ HTML5 Semántico
+   - Estructura clara y accesible
+   - Meta tags para responsividad
+
+✨ CSS3 Avanzado
+   - Flexbox y Grid para layouts
+   - Gradientes y transiciones suaves
+   - Media queries para responsive design
+   - Cajas especiales coloreadas
+
+✨ JavaScript ES6+
+   - Fetch API para cargar posts
+   - Manipulación eficiente del DOM
+   - Sin dependencias externas
+
+✨ JSON para Datos
+   - Almacenamiento limpio
+   - Fácil de actualizar
+   - Separación contenido/presentación
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTADÍSTICAS
+═══════════════════════════════════════════════════════════════════════════════
+
+Contenido Total:
+  - Palabras: ~4,500+
+  - Caracteres: ~29,000+
+  - Secciones: 45+
+  - Tablas: 3 tablas comparativas
+  - Cajas especiales: 15+
+  - Ejemplos: 9+ casos reales
+  - Tiempo de lectura estimado: 25-30 minutos
+
+Archivos de Código:
+  - HTML: 1 archivo (1,521 bytes)
+  - CSS: 1 archivo (6,271 bytes)
+  - JavaScript: 1 archivo (2,454 bytes)
+  - JSON: 3 archivos (29,171 bytes)
+
+═══════════════════════════════════════════════════════════════════════════════
+REFERENCIAS Y RECURSOS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Git & GitHub
+  https://git-scm.com/
+  https://github.com/
+
+✓ GitHub Pages
+  https://pages.github.com/
+
+✓ Arquitectura de Software
+  Clean Architecture - Robert C. Martin
+  Hexagonal Architecture - Alistair Cockburn
+  CQRS Pattern - Greg Young
+
+═══════════════════════════════════════════════════════════════════════════════
+AUTOR
+═══════════════════════════════════════════════════════════════════════════════
+
+Eber Rincón
+Estudiante de Ingeniería de Software
+Universidad UNINCCA
+Corte 3 - 2024
+
+═══════════════════════════════════════════════════════════════════════════════
+
+¡Felicitaciones! Tu blog técnico está completamente listo para publicar. 🎉
+
+═══════════════════════════════════════════════════════════════════════════════
