@@ -1,0 +1,240 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║           BLOG TÉCNICO - ARQUITECTURA DE SOFTWARE                          ║
+║           Autor: Eber Rincón                                              ║
+║           Curso: Electiva I en Ingeniería de Software - UNINCCA 2024      ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+✅ PROYECTO COMPLETADO
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 ESTRUCTURA DEL PROYECTO:
+
+proyecto-copilot/
+├── 📄 index.html ........................ Página principal (¡ABRE AQUÍ!)
+├── 📂 css/
+│   └── styles.css ....................... Estilos modernos y responsivos
+├── 📂 js/
+│   └── main.js .......................... Lógica de carga dinámica de posts
+├── 📂 posts/
+│   ├── post1.json ....................... ¿Qué es Arquitectura de Software?
+│   ├── post2.json ....................... Estilos Arquitectónicos
+│   └── post3.json ....................... Patrones Arquitectónicos Modernos
+├── 📄 README.md ......................... Documentación del proyecto
+├── 📄 INSTRUCCIONES.md .................. Guía de despliegue
+├── 📄 .gitignore ........................ Configuración de Git
+├── 📄 _config.yml ....................... Configuración de GitHub Pages
+└── 📄 deploy.bat ........................ Script para deploy (Windows)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 CONTENIDO DE LOS 3 POSTS:
+
+POST 1: ¿Qué es la Arquitectura de Software? (8,216 bytes)
+────────────────────────────────────────────────────────
+✅ Definición de Arquitectura de Software
+✅ Objetivo principal en un sistema
+✅ Componentes básicos:
+   - Módulos
+   - Interfaces  
+   - Conectores
+✅ Importancia dentro del desarrollo:
+   - Escalabilidad
+   - Mantenibilidad
+   - Rendimiento
+✅ Roles y responsabilidades del Arquitecto
+✅ Ejemplos en proyectos reales
+✅ Conclusión y reflexión final
+
+POST 2: Estilos Arquitectónicos más Utilizados (9,571 bytes)
+──────────────────────────────────────────────────────────
+✅ Definición de estilo arquitectónico
+✅ Estilo Monolítico:
+   - Características
+   - Ventajas
+   - Desventajas
+✅ Arquitectura en Capas (N-Capas)
+✅ Arquitectura Cliente-Servidor
+✅ Arquitectura MVC
+✅ Arquitectura de Microservicios
+✅ Tabla comparativa de estilos
+✅ Conclusión: Cuándo usar cada uno
+
+POST 3: Patrones Arquitectónicos Modernos (11,384 bytes)
+──────────────────────────────────────────────────────────
+✅ Definición de patrón arquitectónico
+✅ Clean Architecture:
+   - Capas (Entities, Use Cases, Adapters, Frameworks)
+   - Propósito
+   - Ventajas y desventajas
+✅ Arquitectura Hexagonal (Puertos y Adaptadores)
+✅ Patrón CQRS:
+   - Modelo de Escritura vs Lectura
+   - Flujo de operaciones
+   - Ventajas y desventajas
+✅ Tabla comparativa de patrones
+✅ Ejemplos de aplicación en proyectos modernos
+✅ Conclusión comparativa
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 CARACTERÍSTICAS DEL BLOG:
+
+✨ Diseño Responsivo
+   - Se adapta a móviles, tablets y desktop
+   
+✨ Navegación Intuitiva
+   - Menú sticky (siempre visible)
+   - Botones "Leer más" en la portada
+   - Volver a inicio fácilmente
+   
+✨ Carga Dinámica
+   - Posts se cargan sin recargar la página
+   - Uso de Fetch API para cargar JSON
+   
+✨ Estilos Modernos
+   - Gradientes atractivos
+   - Colores profesionales
+   - Transiciones suaves
+   - Tablas interactivas
+   
+✨ Contenido Estructurado
+   - Títulos jerárquicos (H1-H3)
+   - Listas ordenadas y desordenadas
+   - Tablas comparativas
+   - Cajas de definición (azul)
+   - Cajas de ventajas (verde)
+   - Cajas de desventajas (rojo)
+   - Cajas de conclusiones (doble gradiente)
+   
+✨ Texto Justificado
+   - Lectura profesional
+   - Párrafos bien estructurados
+   - Conclusiones destacadas
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 CÓMO USAR:
+
+1. ABRE EN TU NAVEGADOR:
+   Simplemente abre el archivo: index.html
+   El blog cargará todos los posts automáticamente
+
+2. NAVEGA POR LOS POSTS:
+   - Usa el menú superior para saltar a cada post
+   - Haz clic en "Leer más" en la portada
+   - Todos los posts cargan sin recargar la página
+
+3. DESPLEGA EN GITHUB PAGES:
+   Lee el archivo INSTRUCCIONES.md para los pasos exactos
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌐 DESPLIEGUE EN GITHUB PAGES:
+
+El blog estará disponible en:
+https://eerinconr-dot.github.io/proyecto-copilot
+
+Para activarlo:
+1. Ve a https://github.com/eerinconr-dot/proyecto-copilot
+2. Settings → Pages
+3. Source: Deploy from a branch
+4. Branch: main, Folder: / (root)
+5. ¡Listo! En 1-2 minutos estará en vivo
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 TECNOLOGÍAS UTILIZADAS:
+
+✅ HTML5 Semántico
+   - Estructura clara y accesible
+   
+✅ CSS3 Avanzado
+   - Flexbox para layouts
+   - Grid para tablas
+   - Gradientes y transiciones
+   - Media queries para responsividad
+   
+✅ JavaScript ES6+
+   - Fetch API para cargar posts
+   - Manipulación del DOM
+   - Event listeners
+   
+✅ JSON
+   - Almacenamiento de contenido
+   - Fácil de actualizar
+   - Separación contenido/presentación
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 ESTADÍSTICAS:
+
+Tamaño total de posts:       29,171 bytes (~29 KB)
+Número de palabras:          ~4,500+ palabras
+Número de secciones:         45+ secciones principales
+Tablas comparativas:         3 tablas
+Cajas especiales:            15+ cajas
+Ejemplos reales:             9+ ejemplos
+Archivos HTML/CSS/JS:        3 archivos principales
+Posts en JSON:               3 archivos
+
+═══════════════════════════════════════════════════════════════════════════════
+
+👨‍💻 AUTOR:
+
+Eber Rincón
+Estudiante de Ingeniería de Software
+Universidad UNINCCA
+Curso: Electiva I en Ingeniería de Software
+Corte 3 - 2024
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ REQUISITOS CUMPLIDOS:
+
+Fase 1: Estructura y Contenido ✅
+├── POST 1 ✅
+│   ├── Definición ✅
+│   ├── Objetivos ✅
+│   ├── Componentes ✅
+│   ├── Importancia ✅
+│   ├── Roles ✅
+│   ├── Ejemplos ✅
+│   └── Conclusión ✅
+│
+├── POST 2 ✅
+│   ├── Definición ✅
+│   ├── Monolítico ✅
+│   ├── N-Capas ✅
+│   ├── Cliente-Servidor ✅
+│   ├── MVC ✅
+│   ├── Microservicios ✅
+│   ├── Tabla comparativa ✅
+│   └── Conclusión ✅
+│
+└── POST 3 ✅
+    ├── Definición ✅
+    ├── Clean Architecture ✅
+    ├── Hexagonal ✅
+    ├── CQRS ✅
+    ├── Comparación ✅
+    ├── Ejemplos ✅
+    └── Conclusión ✅
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📝 PRÓXIMOS PASOS:
+
+1. Abre index.html en tu navegador para ver el blog en acción
+2. Verifica que todos los posts cargan correctamente
+3. Haz commit y push a GitHub
+4. Activa GitHub Pages en Settings
+5. ¡Tu blog estará en vivo en ~2 minutos!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+¡Tu blog técnico sobre Arquitectura de Software está completamente listo! 🎉
+
+═══════════════════════════════════════════════════════════════════════════════
