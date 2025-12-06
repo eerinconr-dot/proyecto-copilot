@@ -29,6 +29,16 @@ nav.site-nav{display:flex;gap:1rem;align-items:center}
 nav.site-nav a{color:var(--muted);text-decoration:none;padding:.45rem .6rem;border-radius:8px;transition:all .18s}
 nav.site-nav a:hover{color:#fff;background:rgba(255,255,255,0.03);transform:translateY(-2px)}
 
+/* Mobile menu */
+.mobile-menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer;width:44px;height:44px;align-items:center;justify-content:center}
+.mobile-menu-btn span{display:inline-block;width:24px;height:2px;background:#fff;border-radius:1px;position:relative;transition:.3s}
+.mobile-menu-btn span::before,.mobile-menu-btn span::after{content:'';position:absolute;width:24px;height:2px;background:#fff;border-radius:1px;left:0;transition:.3s}
+.mobile-menu-btn span::before{top:-8px}
+.mobile-menu-btn span::after{bottom:-8px}
+.mobile-menu-btn.active span{background:transparent}
+.mobile-menu-btn.active span::before{transform:rotate(45deg);top:0}
+.mobile-menu-btn.active span::after{transform:rotate(-45deg);bottom:0}
+
 /* Hero */
 .hero{padding:2rem 0 1.25rem}
 .hero .lead{display:flex;gap:1.5rem;align-items:flex-start}
@@ -58,9 +68,17 @@ nav.site-nav a:hover{color:#fff;background:rgba(255,255,255,0.03);transform:tran
   nav.site-nav{width:100%;justify-content:flex-start;flex-wrap:wrap}
   .hero .lead{flex-direction:column}
   .brand h1{font-size:.95rem}
+  .mobile-menu-btn{display:flex}
+  nav.site-nav{position:absolute;top:70px;left:0;right:0;background:var(--surface);border-bottom:1px solid rgba(255,255,255,0.03);flex-direction:column;gap:0;padding:1rem;max-height:0;overflow:hidden;transition:max-height .3s}
+  nav.site-nav.show{max-height:300px}
+  nav.site-nav a{padding:.6rem 1rem;border-radius:8px}
 }
 
 @media (max-width:480px){
   .post-card{padding:.9rem}
   .hero h2{font-size:1.2rem}
 }
+
+/* Back link */
+.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);text-decoration:none;margin-bottom:1.5rem;font-size:.95rem;transition:all .18s}
+.back-link:hover{transform:translateX(-4px);color:#fff}

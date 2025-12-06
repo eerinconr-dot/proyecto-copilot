@@ -7,8 +7,28 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">ER</div>
+        <h1>Eber Rincon</h1>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="../index.html">Inicio</a>
+        <a href="post1.html">¿Qué es la Arquitectura?</a>
+        <a href="post2.html">Estilos</a>
+        <a href="post3.html">Patrones</a>
+      </nav>
+    </div>
+  </header>
+
   <div class="container article-wrap">
-    <a href="../index.html">← Volver al inicio</a>
+    <a class="back-link" href="../index.html">← Volver al inicio</a>
     <h1>Patrones Arquitectónicos Modernos</h1>
     <p class="meta">Autor: Eber Rincon</p>
 
@@ -38,5 +58,24 @@
     <h2>Conclusión general</h2>
     <p>Los tres patrones apuntan a mejorar la mantenibilidad y escalabilidad, pero cada uno tiene casos de uso distintos: Clean Architecture para claridad y testabilidad del dominio, Hexagonal para aislamiento frente a infraestructuras cambiantes y CQRS para cargas diferenciadas y auditoría. La elección depende de requisitos no funcionales y la complejidad del proyecto.</p>
   </div>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const siteNav = document.getElementById('siteNav');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        siteNav.classList.toggle('show');
+      });
+      const links = siteNav.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuBtn.classList.remove('active');
+          siteNav.classList.remove('show');
+        });
+      });
+    }
+  </script>
+
 </body>
 </html>

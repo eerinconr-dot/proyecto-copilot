@@ -7,8 +7,28 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">ER</div>
+        <h1>Eber Rincon</h1>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="../index.html">Inicio</a>
+        <a href="post1.html">¿Qué es la Arquitectura?</a>
+        <a href="post2.html">Estilos</a>
+        <a href="post3.html">Patrones</a>
+      </nav>
+    </div>
+  </header>
+
   <div class="container article-wrap">
-    <a href="../index.html">← Volver al inicio</a>
+    <a class="back-link" href="../index.html">← Volver al inicio</a>
     <h1>¿Qué es la Arquitectura de Software?</h1>
     <p class="meta">Autor: Eber Rincon</p>
 
@@ -51,5 +71,24 @@
     <h2>Conclusión</h2>
     <p>La arquitectura de software es una disciplina crítica que influye en la calidad y viabilidad del sistema. Tomar decisiones arquitectónicas informadas ayuda a cumplir con los objetivos del negocio y a mantener la salud técnica del proyecto a lo largo del tiempo.</p>
   </div>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const siteNav = document.getElementById('siteNav');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        siteNav.classList.toggle('show');
+      });
+      const links = siteNav.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuBtn.classList.remove('active');
+          siteNav.classList.remove('show');
+        });
+      });
+    }
+  </script>
+
 </body>
 </html>

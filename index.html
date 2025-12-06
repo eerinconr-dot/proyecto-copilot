@@ -14,7 +14,11 @@
         <h1>Eber Rincon</h1>
       </div>
 
-      <nav class="site-nav">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
         <a href="index.html">Inicio</a>
         <a href="posts/post1.html">¿Qué es la Arquitectura?</a>
         <a href="posts/post2.html">Estilos</a>
@@ -57,6 +61,24 @@
       <p>Proyecto para la asignatura - Blog Técnico sobre Arquitectura de Software</p>
     </div>
   </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const siteNav = document.getElementById('siteNav');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        siteNav.classList.toggle('show');
+      });
+      const links = siteNav.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuBtn.classList.remove('active');
+          siteNav.classList.remove('show');
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>
