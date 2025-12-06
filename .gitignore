@@ -1,6 +1,4 @@
+# Ignorar archivos comunes
 node_modules/
 .DS_Store
-*.log
-.vscode/
-.env
-dist/
+/.vscode

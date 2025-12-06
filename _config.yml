@@ -1,7 +1,0 @@
-# Config para GitHub Pages
-# Este archivo indica que este es un proyecto Jekyll
-
-theme: jekyll-theme-cayman
-title: Blog Técnico - Arquitectura de Software
-description: Exploración de conceptos, estilos y patrones arquitectónicos
-show_downloads: false
